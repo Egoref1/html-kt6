@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-black: #04091e;
+    --color-light: #f5f5f5;
+    --color-gray: #747681;
+    --color-yellow: #9FA324;
+}
+
+
+body {
+    color: var(--color-black);
+    font-family: urbanist;
+}
+
+.dashboard {
+    background-color: var(--color-gray);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 36px;
+    column-gap: 25px;
+    padding: 34px 50px 34px 44px;
+}   
+
+.dashboard__block {
+    border-radius: 8px;
+    grid-column: span 1;
+    padding: 24px 21px 30px 31px;
+    background-color: white;
+}
+
+.dashboard__block--wide {
+    grid-column: span 2;
+}
+
+.dashboard__block__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.dashboard__block__header__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.dashboard__block__content {
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 70px;
+}
+
+.dashboard__block__content__value {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 125%;
+}
+
+.dashboard__block__content__change {
+    font-size: 13px;
+    line-height: 160%;
+    color: var(--color-gray);
+
+}
+
+.dashboard__block__content__change2{
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.dashboard__block__content__change3{
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.dashboard__block__content__plot {
+    flex: 0 0 100%;
+    margin-left: auto;
+}
+
+.dashboard__block__header__icon {
+    background-color: var(--color-yellow);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    filter: opacity(0.3);
+}
+
+.dashboard__block__header__icon::before {
+    display: inline-block;
+    content: "";
+    width: 5px;
+    height: 5px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: var(--color-yellow);
+    top: 0;
+    left: -1px;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.dashboard__block__header__additional {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    padding: 1px 0;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.dashboard__block__header__additional__image {
+    width: 100%;
+    height: 20px;
+}
+
+.icon {
+    position: static;
+    margin-left: -80px;
+    margin-top: 10px;
+}
+
+.icons2{
+    margin-right: -12px;
+}
+
+.up {
+    position: relative;
+    margin-top: 2px;
+    margin-left: 12px;
+}
+
+.orangeCircle {
+    position: relative;
+    margin-left: 115px;
+    margin-top: -20px;
+}
+
+.word {
+    margin-left: 8px;
+    margin-top: -10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-gray);
+}
+
+.salesReportText{
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 11px;
+}
+
+.calendar {
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.month {
+    color: var(--color-gray);
+    display: flex;
+    margin-left: 450px;
+    margin-top: -20px;
+}
+
+.chart {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px
+}
+
+.google{
+    display: flex;
+    margin-left: 170px;
+}
+
+.personal{
+    display: flex;
+    margin-left: 250px; 
+    margin-top: -10px;    
+}
+
+.others{
+    display: flex;
+    margin-left: 330px;
+    margin-top: -10px; 
+}
+
+button {
+    margin-left: 170px;
+    margin-top: 20px;
+    font-family: urbanist;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    background-color: #9FA324;
+    width: 200px;
+    height: 52px;
+    cursor: pointer;
+    
+}
+
+.recentOrderText{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.recentOrderText2{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+
+.recentOrder_moreVertical{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    margin-left: auto;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.recentOrderText2Padd{
+    display: flex;
+    gap: 150px;
+    padding: 30px 0 0;
+}
+
+
+.recentOrderText2Num{
+    display: flex;
+    color: #747681;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 30px 0 0;
+}
+
+.humanIcon{
+    display: flex;
+    margin-left: 170px;
+    margin-top: -30px;
+}
+
+.name{
+    display: flex;
+    margin-left: 230px;
+    margin-top: -40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.nameNum{
+    display: flex;
+    margin-left: 230px;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #747681;
+}
+
+.orderDate{
+    display: flex;
+    margin-left: 400px;
+    margin-top: -40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.orderDateTime{
+    display: flex;
+    margin-left: 400px;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #747681;
+}
+
+.status{
+    display: flex;
+    margin-left: 605px;
+    margin-top: -35px;
+}
+
+.price{
+    display: flex;
+    margin-left: 830px;
+    margin-top: -25px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.customers1{
+    display: flex;
+    margin-left: 1015px;
+    margin-top: -30px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.customers2{
+    display: flex;
+    margin-left: 1015px;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #747681;
+}
+
+.wts{
+    display: flex;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.bars{
+    display: flex;
+    padding: 30px 0 0;
+}
+
+.dashboard__block_date{
+    padding: 9px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+}
